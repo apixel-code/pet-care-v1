@@ -1,34 +1,192 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #0f0f10;
+/* Main App Styles */
+.App {
     min-height: 100vh;
+}
+
+/* Hero section background */
+.hero-bg {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdfa 100%);
+}
+
+/* Service card icon container */
+.service-icon {
+    width: 64px;
+    height: 64px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    border-radius: 16px;
+    background: linear-gradient(135deg, #0ea5e9 0%, #14b8a6 100%);
     color: white;
+    margin-bottom: 1rem;
 }
 
-.App-link {
-    color: #61dafb;
+/* Blog card image */
+.blog-image {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
+.blog-card:hover .blog-image {
+    transform: scale(1.05);
+}
+
+/* Contact info icon */
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #0ea5e9;
+    color: white;
+    flex-shrink: 0;
+}
+
+/* Admin sidebar */
+.admin-sidebar {
+    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* Stats card */
+.stats-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+/* Table styles */
+.admin-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.admin-table th {
+    background: #f8fafc;
+    padding: 12px 16px;
+    text-align: right;
+    font-weight: 600;
+    color: #475569;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.admin-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+}
+
+.admin-table tr:hover td {
+    background: #f8fafc;
+}
+
+/* Status badges */
+.status-pending {
+    background: #fef3c7;
+    color: #92400e;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-confirmed {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-completed {
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-cancelled {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Mobile menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+}
+
+.mobile-menu-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    background: white;
+    z-index: 50;
+    padding: 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu-content.open {
+    transform: translateX(0);
+}
+
+/* Form focus styles */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #0ea5e9;
+    border-color: #0ea5e9;
+}
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-container img {
+    height: 48px;
+    width: auto;
+}
+
+/* Footer */
+.footer-bg {
+    background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+}
+
+/* Floating action button */
+.floating-cta {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 30;
+    animation: pulse-gentle 2s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+    .floating-cta {
+        bottom: 16px;
+        right: 16px;
     }
 }
