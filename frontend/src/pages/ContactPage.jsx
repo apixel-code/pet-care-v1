@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
   Phone, MapPin, Clock, Send, CheckCircle, 
@@ -58,6 +59,7 @@ const timeSlots = [
 const ContactPage = () => {
   const [formType, setFormType] = useState("appointment"); // appointment or message
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
   
   // Appointment form state
   const [appointmentForm, setAppointmentForm] = useState({
@@ -96,6 +98,10 @@ const ContactPage = () => {
         preferred_time: "",
         notes: ""
       });
+      // Redirect to home page after success
+      setTimeout(() => {
+        navigate("/");
+      }, 1500);
     } catch (error) {
       toast.error("দুঃখিত, কিছু সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।");
     } finally {
