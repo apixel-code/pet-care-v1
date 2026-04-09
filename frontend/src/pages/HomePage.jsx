@@ -320,26 +320,14 @@ const HomePage = () => {
 
       <Footer />
       
-      {/* Floating CTA Button (Mobile) */}
-      <div className="floating-cta md:hidden">
-        <a href="tel:+8801797993951">
-          <Button 
-            size="lg"
-            className="bg-sky-600 hover:bg-sky-700 text-white rounded-full shadow-lg px-6"
-            data-testid="floating-cta"
-          >
-            <Phone className="w-5 h-5 mr-2" />
-            কল করুন
-          </Button>
-        </a>
-      </div>
+      {/* Floating CTA Button (Mobile) - Removed to avoid conflict with WhatsApp */}
 
       {/* WhatsApp Floating Button */}
       <a
         href="https://wa.me/8801797993951?text=আসসালামু আলাইকুম, আমি সুপ্রীম পেট ক্লিনিকে এপয়েন্টমেন্ট নিতে চাই।"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-24 md:bottom-8 right-4 md:right-8 z-40 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all hover:scale-110"
+        className="fixed bottom-6 right-4 md:right-8 z-40 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all hover:scale-110"
         data-testid="whatsapp-button"
       >
         <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">

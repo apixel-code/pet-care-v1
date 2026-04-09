@@ -24,10 +24,10 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2" data-testid="header-logo">
-            <img src={LOGO_URL} alt="Supreme Pet Clinic" className="h-12 md:h-14 w-auto" />
-            <div className="hidden sm:block">
-              <p className="text-sm font-semibold text-sky-600">সুপ্রীম পেট ক্লিনিক</p>
-              <p className="text-xs text-slate-500">Supreme Pet Clinic</p>
+            <img src={LOGO_URL} alt="Supreme Pet Clinic" className="h-10 md:h-14 w-auto" />
+            <div>
+              <p className="text-xs sm:text-sm font-semibold text-sky-600 leading-tight">সুপ্রীম পেট ক্লিনিক</p>
+              <p className="text-[10px] sm:text-xs text-slate-500 leading-tight">Supreme Pet Clinic</p>
             </div>
           </Link>
 
