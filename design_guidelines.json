@@ -1,0 +1,117 @@
+{
+  "theme": "Light",
+  "archetype": "Organic & Earthy (Modified for Medical Trust)",
+  "design_philosophy": {
+    "emotion": "Deep empathy, trust, relief, and professional care.",
+    "copywriting_tone": "Targeting the 'reptilian brain' - addressing the fear of a sick pet and offering the ultimate relief and transformation. All text MUST be in fluent, natural Bengali.",
+    "visual_mood": "Warm, clean, trustworthy, using soft medical blues and crisp whites to feel sterile yet welcoming."
+  },
+  "colors": {
+    "background": {
+      "main": "bg-slate-50",
+      "surface": "bg-white",
+      "dashboard_bg": "bg-slate-50",
+      "glass": "bg-white/70 backdrop-blur-xl border-b border-slate-200/50"
+    },
+    "primary": {
+      "default": "bg-sky-600",
+      "hover": "hover:bg-sky-700 hover:text-white",
+      "text": "text-sky-600",
+      "ring": "focus:ring-sky-300"
+    },
+    "secondary": {
+      "default": "bg-teal-500",
+      "hover": "hover:bg-teal-600 hover:text-white",
+      "text": "text-teal-600"
+    },
+    "text": {
+      "heading": "text-slate-900",
+      "body": "text-slate-600",
+      "muted": "text-slate-400",
+      "inverse": "text-white"
+    },
+    "border": {
+      "default": "border-slate-200",
+      "light": "border-slate-100"
+    }
+  },
+  "typography": {
+    "font_family": {
+      "heading": "'Baloo Da 2', sans-serif",
+      "body": "'Hind Siliguri', sans-serif"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight",
+      "h2": "text-3xl sm:text-4xl font-bold tracking-tight",
+      "h3": "text-2xl font-semibold tracking-tight",
+      "body": "text-base sm:text-lg leading-relaxed",
+      "small": "text-sm tracking-wide"
+    },
+    "google_fonts_import": "@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');"
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-16 sm:py-24 lg:py-32",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid": {
+      "bento": "grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8",
+      "dashboard": "grid grid-cols-1 md:grid-cols-4 gap-6"
+    },
+    "radius": {
+      "card": "rounded-2xl",
+      "button": "rounded-full",
+      "image": "rounded-3xl"
+    }
+  },
+  "components_strategy": {
+    "header": "Sticky with Glassmorphism (Crystal Glass). Must contain the logo, nav links (হোম, সেবাসমূহ, ব্লগ, যোগাযোগ), and CTA button.",
+    "hero": "Split layout or subtle overlap. High-emotional Bengali text on left, highly empathetic image on right. Maximum overlay opacity bg-black/30 if using background image.",
+    "buttons": "Primary buttons use sky-600, rounded-full, with hover lift (-translate-y-1) and shadow-lg.",
+    "cards": "Neumorphic tactile or clean flat with 1px border. bg-white, border-slate-100, shadow-[0_8px_30px_rgb(0,0,0,0.04)]. Must have generous internal padding (p-8).",
+    "dashboard": "Strict grid hierarchy. Use flat surfaces with subtle 1px borders (border-slate-200), no excessive shadows. Sidebar navigation."
+  },
+  "motion_and_interactions": {
+    "hover": "Cards lift slightly (hover:-translate-y-1) and increase shadow. Buttons scale slightly (hover:scale-105) with transition-transform duration-300.",
+    "entrance": "Use Framer Motion for scroll-triggered fade-ins and slide-ups (initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}).",
+    "glass_panels": "Add backdrop-saturate-150 to glassmorphism headers to make colors pop."
+  },
+  "media": {
+    "logo": {
+      "url": "https://customer-assets.emergentagent.com/job_1f657fef-67dc-4bd6-b745-98b3a70b1384/artifacts/v2gm9yua_image.png",
+      "description": "Supreme Pet Clinic Logo (Blue heart with cat and dog silhouette)"
+    },
+    "hero_image": {
+      "url": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxoYXBweSUyMGhlYWx0aHklMjBkb2clMjBhbmQlMjBjYXR8ZW58MHx8fHwxNzc1NzQ3MzU3fDA&ixlib=rb-4.1.0&q=85",
+      "description": "White dog and gray cat hugging affectionately on grass - highly emotional."
+    },
+    "services_vet": {
+      "url": "https://images.unsplash.com/photo-1700665537604-412e89a285c3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHx2ZXRlcmluYXJpYW4lMjB3aXRoJTIwZG9nJTIwb3IlMjBjYXQlMjBjbGluaWN8ZW58MHx8fHwxNzc1NzQ3MzU3fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Veterinarian carefully holding and examining a dog - shows professional care."
+    },
+    "blog_placeholder": {
+      "url": "https://images.unsplash.com/photo-1509205477838-a534e43a849f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGhlYWx0aHklMjBkb2clMjBhbmQlMjBjYXR8ZW58MHx8fHwxNzc1NzQ3MzU3fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Shallow focus of a happy dog and cat."
+    }
+  },
+  "copywriting_bengali": {
+    "hero_title": "আপনার আদরের পোষা প্রাণীটি কি অসুস্থ? আমরা আছি তো!",
+    "hero_subtitle": "সাভারের বুকে একমাত্র আধুনিক ও বিশ্বস্ত পেট ক্লিনিক, যেখানে আপনার আদরের বন্ধুটি পাবে পরিবারের মতোই মমতা ও সেরা চিকিৎসা।",
+    "cta_primary": "এপয়েন্টমেন্ট বুক করুন",
+    "why_us_title": "কেন আমাদের বেছে নেবেন?",
+    "services_title": "আমাদের সেবাসমূহ",
+    "blog_title": "পোষা প্রাণীর যত্নে টিপস",
+    "contact_title": "যোগাযোগ করুন"
+  },
+  "icons_library": "lucide-react",
+  "testing": {
+    "data_testid_rule": "All interactive elements MUST include a descriptive data-testid attribute in kebab-case (e.g., data-testid='hero-book-appointment-button')."
+  },
+  "instructions_to_main_agent": [
+    "Install and configure 'lucide-react' for icons.",
+    "Install 'framer-motion' for scroll animations.",
+    "Add the Google Fonts import for 'Baloo Da 2' and 'Hind Siliguri' in index.css.",
+    "Build the website as a React single-page application (or multi-page routing with react-router-dom) encompassing Marketing Pages (Home, Services, Blog, Contact) and a separate Admin Dashboard route.",
+    "Ensure all copy is entirely in natural Bengali as per the guidelines.",
+    "Implement the Contact section with static information (Savar, Dhaka / +880 1797-993951, +880 1738-139977) and a functional form.",
+    "Admin panel must include 'Manage Appointments', 'Add Blog Post', and 'View Messages' sections using a dense layout."
+  ]
+}
