@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Clock, Heart } from "lucide-react";
+import { Phone, MapPin, Clock, Heart, MessageCircle } from "lucide-react";
 
 const LOGO_URL = "https://customer-assets.emergentagent.com/job_1f657fef-67dc-4bd6-b745-98b3a70b1384/artifacts/v2gm9yua_image.png";
 
@@ -71,6 +71,17 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" />
                 <span className="text-slate-300">২৪/৭ সেবা উপলব্ধ</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <MessageCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <a 
+                  href="https://wa.me/8801797993951?text=আসসালামু আলাইকুম, আমি সুপ্রীম পেট ক্লিনিকে এপয়েন্টমেন্ট নিতে চাই।"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-300 hover:text-green-400 transition-colors"
+                >
+                  WhatsApp এ মেসেজ করুন
+                </a>
               </li>
             </ul>
           </div>
