@@ -1,5 +1,6 @@
 from dotenv import load_dotenv
 from pathlib import Path
+import certifi
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -19,7 +20,7 @@ import secrets
 
 # MongoDB connection
 mongo_url = os.environ['MONGO_URL']
-client = AsyncIOMotorClient(mongo_url)
+client = AsyncIOMotorClient(mongo_url, tlsCAFile=certifi.where()) 
 db = client[os.environ['DB_NAME']]
 
 # Admin password from env or default
