@@ -92,8 +92,20 @@ export const Footer = () => {
           <p className="text-slate-400 text-sm">
             © {new Date().getFullYear()} সুপ্রীম পেট ক্লিনিক। সর্বস্বত্ব সংরক্ষিত।
           </p>
-          <p className="text-slate-400 text-sm flex items-center gap-1">
+          <p className="text-slate-400 text-sm flex flex-wrap items-center justify-center gap-1">
             তৈরি করা হয়েছে <Heart className="w-4 h-4 text-red-500" /> দিয়ে পোষা প্রাণী প্রেমীদের জন্য
+            <span className="mx-2 hidden md:inline">|</span>
+            <span>
+              Developed By{" "}
+              <a
+                href="https://apixel.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sky-400 hover:text-sky-300 transition-colors"
+              >
+                Apixel
+              </a>
+            </span>
           </p>
         </div>
       </div>
